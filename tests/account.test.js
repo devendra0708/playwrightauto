@@ -22,7 +22,7 @@ test.describe('Salesforce Account Creation', () => {
         await basePage.switchToApp('Sales');
     });
 
-    test('Create a new Account in Salesforce', async ({ page }) => {
+    test.only('Create a new Account in Salesforce', async ({ page }) => {
         // Navigate to Accounts
         await page.click('a[title="Accounts"]');
 
