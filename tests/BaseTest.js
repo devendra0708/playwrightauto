@@ -1,5 +1,5 @@
 const { loginToSalesforce } = require('../utils/helpers');  // Salesforce login helper
-const { username, password } = require('../utils/env');      // Username and password from environment variables
+const { username, password } = require('../config/env');      // Username and password from environment variables
 const AppLauncherComponent = require('../components/AppLauncherComponent');  // Component for app switching
 
 class BaseTest {

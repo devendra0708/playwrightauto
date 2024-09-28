@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const AccountPage = require('../pages/AccountPage');
 const BaseTest = require('../tests/BaseTest');
-const { username, password } = require('../utils/env');
+const { username, password } = require('../config/env');
 
 class AccountTabTest extends BaseTest {
     constructor() {

@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const BasePage = require('../pages/BasePage');
 const AccountPage = require('../pages/AccountPage');
 const { loginToSalesforce } = require('../utils/helpers');
-const { username, password } = require('../utils/env');
+const { username, password } = require('../config/env');
 
 test.describe('Salesforce Account Creation', () => {
 

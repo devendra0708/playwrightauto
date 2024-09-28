@@ -1,4 +1,4 @@
-const { username, password, baseURL } = require('./env');  // Import baseURL
+const { username, password, baseURL } = require('../config/env');  // Import baseURL
 
 async function loginToSalesforce(page) {
     // Check if the user is already logged in
