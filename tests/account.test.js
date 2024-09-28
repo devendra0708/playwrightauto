@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const BasePage = require('../pages/BasePage');
 const AccountPage = require('../pages/AccountPage');
 const { loginToSalesforce } = require('../utils/helpers');
-const { username, password } = require('../utils/env');
+const { username, password } = require('../config/env');
 
 test.describe('Salesforce Account Creation', () => {
 
@@ -22,7 +22,7 @@ test.describe('Salesforce Account Creation', () => {
         await basePage.switchToApp('Sales');
     });
 
-    test('Create a new Account in Salesforce', async ({ page }) => {
+    test.only('Create a new Account in Salesforce', async ({ page }) => {
         // Navigate to Accounts
         await page.click('a[title="Accounts"]');
 

@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const BasePage = require('../pages/BasePage');
 const { loginToSalesforce } = require('../utils/helpers');
-const { username, password } = require('../utils/env');
+const { username, password } = require('../config/env');
 
 test.describe.skip('Salesforce Account Creation', () => {
 
