@@ -3,11 +3,13 @@ const BasePage = require('../pages/BasePage');
 const AccountPage = require('../pages/AccountPage');
 const { loginToSalesforce } = require('../utils/helpers');
 const { username, password } = require('../config/env');
+const StringUtil = require('../utils/stringUtil');
 
 test.describe('Salesforce Account Creation', () => {
 
     let basePage;
     let accountPage;
+    let accountName = "Test Account - " + StringUtil.generateRandomAlphabetic();
 
     test.beforeEach(async ({ page }) => {
         // Perform login
@@ -31,7 +33,7 @@ test.describe('Salesforce Account Creation', () => {
 
         // Fill the account form
         const accountDetails = {
-            accountName: 'Automation Test Account',
+            accountName: accountName,//'Automation Test Account',
             phone: '123-456-7890',
             website: 'https://testaccount.com',
             type: 'Customer',
@@ -45,7 +47,7 @@ test.describe('Salesforce Account Creation', () => {
         await accountPage.saveAccount();
 
         // Verify account creation
-        const isAccountCreated = await accountPage.verifyAccountCreated('Automation Test Account');
+        const isAccountCreated = await accountPage.verifyAccountCreated(accountName);
         expect(isAccountCreated).toBe(true);
     });
 });
