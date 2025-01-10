@@ -1,9 +1,6 @@
-const TextInputComponent = require('../components/TextInputComponent');
-const DropdownComponent = require('../components/DropdownComponent');
-const CheckboxComponent = require('../components/CheckboxComponent');
-const DatePickerComponent = require('../components/DatePickerComponent');
-const MainTabset = require('./common/MainTabset');  // For switching between Related and Details
-const SideTabset = require('./common/SideTabset');  // For switching between Activity and Chatter
+import TextInputComponent from '../components/TextInputComponent';
+import MainTabset from './common/MainTabset';  // For switching between Related and Details
+import SideTabset from './common/SideTabset';  // For switching between Activity and Chatter
 
 class AccountPage {
     constructor(page) {
@@ -72,4 +69,4 @@ class AccountPage {
     }
 }
 
-module.exports = AccountPage;
+export default AccountPage;

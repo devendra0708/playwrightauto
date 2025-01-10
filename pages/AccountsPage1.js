@@ -1,7 +1,7 @@
-const TableComponent = require('../components/TableComponent');
-const AppLauncherComponent = require('../components/AppLauncherComponent');
-const DropdownComponent = require('../components/DropdownComponent');
-const AutoCompleteDropdownComponent = require('../components/AutoCompleteDropdownComponent');
+import TableComponent from '../components/TableComponent';
+import AppLauncherComponent from '../components/AppLauncherComponent';
+import DropdownComponent from '../components/DropdownComponent';
+import AutoCompleteDropdownComponent from '../components/AutoCompleteDropdownComponent';
 
 class AccountsPage {
     constructor(page) {
@@ -87,4 +87,4 @@ class AccountsPage {
     }
 }
 
-module.exports = AccountsPage;
+export default AccountsPage;

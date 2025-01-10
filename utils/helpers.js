@@ -1,6 +1,6 @@
-const { username, password, baseURL } = require('../env');  // Import baseURL
+import { username, password, baseURL } from '../env.js';  // Import baseURL
 
-async function loginToSalesforce(page) {
+export async function loginToSalesforce(page) {
     // Check if the user is already logged in
     const isLoggedIn = await page.locator('.slds-icon-waffle').isVisible({ timeout: 5000 }).catch(() => false);
 
@@ -21,5 +21,3 @@ async function loginToSalesforce(page) {
     await page.waitForSelector('.slds-icon-waffle');
     console.log("Login successful.");
 }
-
-module.exports = { loginToSalesforce };

@@ -1,7 +1,4 @@
-const TextInputComponent = require('../components/TextInputComponent');
-const DropdownComponent = require('../components/DropdownComponent');
-const CheckboxComponent = require('../components/CheckboxComponent');
-const DatePickerComponent = require('../components/DatePickerComponent');
+import TextInputComponent from '../components/TextInputComponent';
 
 class AccountPage {
     constructor(page) {
@@ -53,4 +50,4 @@ class AccountPage {
     }
 }
 
-module.exports = AccountPage;
+export default AccountPage;

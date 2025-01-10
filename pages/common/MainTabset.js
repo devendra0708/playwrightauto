@@ -19,4 +19,4 @@ class MainTabset {
     }
 }
 
-module.exports = MainTabset;
+export default MainTabset;

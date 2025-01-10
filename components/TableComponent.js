@@ -74,4 +74,4 @@ class TableComponent {
     }
 }
 
-module.exports = TableComponent;
+export default TableComponent;

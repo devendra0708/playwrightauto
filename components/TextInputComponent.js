@@ -9,4 +9,4 @@ class TextInputComponent {
     }
 }
 
-module.exports = TextInputComponent;
+export default TextInputComponent;

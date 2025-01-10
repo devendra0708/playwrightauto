@@ -35,4 +35,4 @@ class DropdownComponent {
     }
 }
 
-module.exports = DropdownComponent;
+export default DropdownComponent;

@@ -48,4 +48,4 @@ class AppLauncherComponent {
     }
 }
 
-module.exports = AppLauncherComponent;
+export default AppLauncherComponent;

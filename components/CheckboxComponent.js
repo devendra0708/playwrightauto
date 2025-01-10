@@ -26,4 +26,4 @@ class CheckboxComponent {
     }
 }
 
-module.exports = CheckboxComponent;
+export default CheckboxComponent;

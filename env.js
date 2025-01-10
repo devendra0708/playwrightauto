@@ -1,5 +1,3 @@
-module.exports = {
-    username: 'dev100@test.com',
-    password: 'Madmax.22222',
-    baseURL: 'https://techm139-dev-ed.develop.my.salesforce.com',  // Optional base URL if needed
-};
+export const username = 'dev100@test.com';
+export const password = 'Madmax.22222';
+export const baseURL = 'https://techm139-dev-ed.develop.my.salesforce.com';

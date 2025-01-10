@@ -1,6 +1,5 @@
-const { test, expect } = require('@playwright/test');
-const LoginPage = require('../pages/loginPage');
-// const { loginToSalesforce } = require('../utils/helpers');
+import { test, expect } from '@playwright/test';
+import LoginPage from '../pages/loginPage.js';
 
 test.describe.skip('Salesforce Login', () => {
     test('Login to Salesforce and verify dashboard', async ({ page }) => {

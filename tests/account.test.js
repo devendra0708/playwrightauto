@@ -1,9 +1,8 @@
-const { test, expect } = require('@playwright/test');
-const BasePage = require('../pages/BasePage');
-const AccountPage = require('../pages/AccountPage');
-const { loginToSalesforce } = require('../utils/helpers');
-const { username, password } = require('../config/env');
-const StringUtil = require('../utils/stringUtil');
+import { test, expect } from '@playwright/test';
+import BasePage from '../pages/BasePage.js';
+import AccountPage from '../pages/AccountPage.js';
+import { loginToSalesforce } from '../utils/helpers.js';
+import StringUtil from '../utils/stringUtil.js';
 
 test.describe('Salesforce Account Creation', () => {
 
@@ -13,7 +12,7 @@ test.describe('Salesforce Account Creation', () => {
 
     test.beforeEach(async ({ page }) => {
         // Perform login
-        await loginToSalesforce(page, username, password);
+        await loginToSalesforce(page);
 
         // Initialize BasePage after login
         basePage = new BasePage(page);
