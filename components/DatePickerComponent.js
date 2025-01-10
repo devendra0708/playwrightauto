@@ -9,4 +9,4 @@ class DatePickerComponent {
     }
 }
 
-module.exports = DatePickerComponent;
+export default DatePickerComponent;

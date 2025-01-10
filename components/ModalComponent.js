@@ -57,4 +57,4 @@ class ModalComponent {
     }
 }
 
-module.exports = ModalComponent;
+export default ModalComponent;

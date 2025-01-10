@@ -19,4 +19,4 @@ class SideTabset {
     }
 }
 
-module.exports = SideTabset;
+export default SideTabset;

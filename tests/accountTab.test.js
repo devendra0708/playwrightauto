@@ -1,7 +1,6 @@
-const { test, expect } = require('@playwright/test');
-const AccountPage = require('../pages/AccountPage');
-const BaseTest = require('../tests/BaseTest');
-const { username, password } = require('../config/env');
+import { test, expect } from '@playwright/test';
+import AccountPage from '../pages/AccountPage.js';
+import BaseTest from '../tests/BaseTest.js';
 
 class AccountTabTest extends BaseTest {
     constructor() {
@@ -40,7 +39,7 @@ test.describe('Account Tabs Test', () => {
 
     test.beforeEach(async ({ page }) => {
         // Login before running tests
-        await accountTabTest.setup(page, username, password);
+        await accountTabTest.setup(page);
     });
 
     test('Switch to Details tab and verify account details', async ({ page }) => {

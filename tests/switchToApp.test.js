@@ -1,7 +1,6 @@
-const { test, expect } = require('@playwright/test');
-const BasePage = require('../pages/BasePage');
-const { loginToSalesforce } = require('../utils/helpers');
-const { username, password } = require('../env');
+import { test, expect } from '@playwright/test';
+import BasePage from '../pages/BasePage.js';
+import { loginToSalesforce } from '../utils/helpers.js';
 
 // Main test suite for app switching
 test.describe.skip('Switch to App using App Launcher', () => {
@@ -11,7 +10,7 @@ test.describe.skip('Switch to App using App Launcher', () => {
     // This will run before each test and perform login
     test.beforeEach(async ({ page }) => {
         // Perform login before each test
-        await loginToSalesforce(page, username, password);
+        await loginToSalesforce(page);
 
         // Initialize BasePage after login
         basePage = new BasePage(page);

@@ -1,6 +1,5 @@
-const { loginToSalesforce } = require('../utils/helpers');  // Salesforce login helper
-const { username, password } = require('../config/env');      // Username and password from environment variables
-const AppLauncherComponent = require('../components/AppLauncherComponent');  // Component for app switching
+import { loginToSalesforce } from '../utils/helpers.js';  // Salesforce login helper
+import AppLauncherComponent from '../components/AppLauncherComponent.js';  // Component for app switching
 
 class BaseTest {
     constructor() {
@@ -12,7 +11,7 @@ class BaseTest {
         console.log('Setting up test...');
         
         // Perform login
-        await loginToSalesforce(page, username, password);  
+        await loginToSalesforce(page);  
         console.log('Login successful, proceeding to switch apps...');
 
         // Initialize AppLauncherComponent to switch apps
@@ -53,4 +52,4 @@ class BaseTest {
     }
 }
 
-module.exports = BaseTest;
+export default BaseTest;

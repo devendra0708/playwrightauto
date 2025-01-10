@@ -1,4 +1,4 @@
-const AppLauncherComponent = require('../components/AppLauncherComponent');
+import AppLauncherComponent from '../components/AppLauncherComponent';
 
 class BasePage {
     constructor(page) {
@@ -20,4 +20,4 @@ class BasePage {
     }
 }
 
-module.exports = BasePage;
+export default BasePage;

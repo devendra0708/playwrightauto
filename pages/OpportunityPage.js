@@ -1,6 +1,6 @@
-const TableComponent = require('../components/TableComponent');  // Correct the path to components folder
-const DropdownComponent = require('../components/DropdownComponent');
-const AutoCompleteDropdownComponent = require('../components/AutoCompleteDropdownComponent');
+import TableComponent from '../components/TableComponent';  // Correct the path to components folder
+import DropdownComponent from '../components/DropdownComponent';
+import AutoCompleteDropdownComponent from '../components/AutoCompleteDropdownComponent';
 
 class OpportunityPage {
     constructor(page) {
@@ -71,4 +71,4 @@ class OpportunityPage {
     }
 }
 
-module.exports = OpportunityPage;
+export default OpportunityPage;
