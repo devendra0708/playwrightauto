@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const BasePage = require('../pages/BasePage');
 const { loginToSalesforce } = require('../utils/helpers');
-const { username, password } = require('../config/env');
+const { username, password } = require('../env');
 
 // Main test suite for app switching
 test.describe.skip('Switch to App using App Launcher', () => {

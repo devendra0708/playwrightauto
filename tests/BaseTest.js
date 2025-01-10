@@ -27,6 +27,8 @@ class BaseTest {
     async teardown() {
         // Add any global cleanup logic here if needed
         console.log('Cleaning up after test...');
+        // await this.page.close();
+        // await this.browser.close();
     }
 
     // Optional method to ensure the page is loaded before a test step
