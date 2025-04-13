@@ -1,4 +1,4 @@
-import AppLauncherComponent from '../components/AppLauncherComponent';
+import AppLauncherComponent from '../components/AppLauncher';
 
 class BasePage {
     constructor(page) {

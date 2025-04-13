@@ -1,5 +1,5 @@
 import { loginToSalesforce } from '../utils/helpers.js';  // Salesforce login helper
-import AppLauncherComponent from '../components/AppLauncherComponent.js';  // Component for app switching
+import AppLauncherComponent from '../components/AppLauncher.js';  // Component for app switching
 
 class BaseTest {
     constructor() {

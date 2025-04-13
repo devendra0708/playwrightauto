@@ -1,4 +1,4 @@
-class CheckboxComponent {
+class CheckboxElement {
     constructor(page, selector) {
         this.page = page;
         this.selector = selector;
@@ -26,4 +26,4 @@ class CheckboxComponent {
     }
 }
 
-export default CheckboxComponent;
+export default CheckboxElement;
