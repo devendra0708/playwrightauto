@@ -1,3 +1,3 @@
-export const username = 'dev100@test.com';
-export const password = 'Madmax.22222';
-export const baseURL = 'https://techm139-dev-ed.develop.my.salesforce.com';
+export const username = 'saurav67999701@agentforce.com';
+export const password = 'Madmax.11111';
+export const baseURL = 'https://orgfarm-866bf4bced-dev-ed.develop.lightning.force.com';
